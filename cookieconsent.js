@@ -471,7 +471,7 @@ var cc =
         jQuery('#cc-notification').remove();
         if (cc.ismobile) {
             cc.setupformobile();
-            jQuery('head').append('<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">');
+            jQuery('head').append('<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">');
             jQuery('body').html('').css("margin", 0);
         }
         data = '<div id="cc-notification">' +
@@ -1230,7 +1230,7 @@ var cc =
     setupformobile: function () {
         if (!cc.hassetupmobile) {
             cc.hassetupmobile = true;
-            jQuery('head').append('<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">');
+            jQuery('head').append('<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">');
             if (cc.settings.style == 'cc-light') {
                 bgcol = '#e1e1e1';
             } else {
